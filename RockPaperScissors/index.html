@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Rock Paper Scissors Mini-Game</title>
+  </head>
+  <body>
+    
+
+    <!-- title -->
+    <h1>Rock Paper Scissors</h1>
+    <h2>Mini-Game</h2>
+    <h3>Choose your weapon:</h3>
+     <!-- defined the main container after the title so the cards fits in the page -->
+    <main class="main-container">
+    <!-- Flip cards container -->
+    <div class="cards-container" id="cards"> 
+
+    <!-- rock -->
+    <section class="card-container">
+    <!-- the image -->
+        <div class="flip-card">
+        <div class="flip-card-inner">
+              <span style="font-size: 100px">&#129704;</span>
+              <p>Rock &#129704;</p>
+        </div>
+        </div>
+        <!-- select btn -->
+        <div class="btn-container">
+            <button class="select-btn btn choice" id="select-rock">Select Rock</button>
+        </div>
+    </section>
+
+    <!-- paper -->
+    <section class="card-container">
+        <!-- the image -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <span style="font-size: 100px">&#128466;</span>
+              <p>Paper &#128466;</p>
+        </div>
+        </div>
+        <!-- select btn -->
+        <div class="btn-container">
+            <button class="select-btn btn choice" id="select-paper">Select Paper</button>
+        </div>
+    </section>
+    
+     <!-- scissors-->
+     <section class="card-container">
+        <!-- the image -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <span style="font-size: 100px">&#9986;</span>
+              <p>Scissors &#9986;</p>
+        </div>
+        </div>
+    <!-- select btn -->
+        <div class="btn-container">
+            <button class="select-btn btn choice" id="select-scissors">Select Scissors</button>
+        </div>
+    </div>
+    </section>
+    <!-- bottom buttons -->
+    <div class="btn-container">
+        <button class="btn" id="start"> Start </button>
+        <button class="btn" id="restart"> Restart </button>
+    </div>
+    <script src="script.js"></script>
+
+
+  </body>
+</html>

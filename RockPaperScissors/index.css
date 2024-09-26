@@ -1,0 +1,124 @@
+body {
+    background-image: url(images/bgimag7.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    text-align: center; 
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 3.0em; /* Large font for larger screens */
+    color: rgba(0, 0, 0, 0.734); 
+    
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 30px 40px; 
+    color: black;
+    font-size: 1.5em; 
+    letter-spacing: 3px;
+    background-color: rgba(238, 255, 0, 0.132);
+    border: 1px solid rgba(255, 255, 255, 0.159);
+    backdrop-filter: blur(5px); 
+    font-style: italic;
+    font-family: Lucida Handwriting;
+    cursor: pointer;
+    text-transform: uppercase;
+} 
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.382);
+    transition: 0.5s;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.588), 0 0 10px white, 0 20px 50px white, 0 30px 70px whitesmoke;
+}
+
+.select-btn:focus {
+    background-color: #f6ff4ed1;
+}
+ 
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+#restart {
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: 40px; 
+    margin-top: 50px; 
+}
+
+.card-container {
+    display: flex;
+    border-radius: 40px;
+    margin: 20px; 
+    padding: 80px; 
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(230, 225, 173, 0.429) 5%, white 90%);
+    width: 500px; 
+    height: 500px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container:hover {
+    box-shadow: 0 0px 3px white, 0 0px 5px white, 0 0px 10px white, 0 0px 15px white, 0 0px 20px white, 10px 0px 40px white;
+}
+
+/* Responsive adjustments for smaller screens */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 2.0em; /* Smaller font size for tablet */
+    }
+
+    .card-container {
+        width: 400px; /* Smaller card width */
+        height: 500px; /* Adjust card height */
+    }
+
+    .btn {
+        font-size: 1.2em; /* Smaller button font size */
+        padding: 20px 30px; /* Smaller padding for buttons */
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.5em; /* Even smaller font for smartphones */
+    }
+
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        gap: 20px; /* Less space between cards */
+    }
+
+    .card-container {
+        width: 90%; /* Full width for smaller screens */
+        height: auto; /* Allow height to be dynamic based on content */
+        padding: 40px; /* Adjust padding for smaller screens */
+    }
+
+    .btn {
+        font-size: 1em; /* Smaller button font size */
+        padding: 15px 20px; /* Smaller padding for buttons */
+    }
+}
